@@ -1,0 +1,53 @@
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background-color: rgb(68, 67, 67);
+}
+a,
+p ,l
+i,
+button{
+text-decoration:none;
+color:white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor :pointer;
+    letter-spacing: .2em;
+}
+
+.nav-links li{
+
+    list-style: none;
+    display: inline-block;
+
+}
+.nav-links li a{
+    margin: 0 15px;  
+    transition: all .3s ease 0%;
+}
+.nav-links li a:hover{
+   color: red;
+}
+
+button{
+    border:none ;
+    background-color: red;
+    margin-right: 20px;
+    padding: 6px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+button:hover{
+
+    background-color: rgb(197, 6, 6);
+    transition: all .3s ease 0%;
+}

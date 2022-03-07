@@ -1,0 +1,8 @@
+body{
+    margin: 5;
+}
+header,footer{
+    height: 100px;
+    background: #585745;
+    overflow: hidden;
+}
