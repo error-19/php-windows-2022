@@ -1,0 +1,82 @@
+INNER JOIN:
+SELECT customer.customer_name,customer.customer_number,customer.customer_email,orders.order_number
+FROM customer
+INNER JOIN orders ON orders.c_id=customer.customer_id
+
+
+LEFT JOIN:::
+SELECT customer.customer_name,customer.customer_number,orders.order_number
+FROM customer
+LEFT JOIN orders ON orders.c_id=customer.customer_id
+
+
+RIGHT JOIN:
+SELECT customer.customer_name,customer.customer_number,orders.order_number
+FROM orders
+RIGHT JOIN customer ON customer.customer_id=orders.c_id
+
+UNION OPARETOR:
+ SELECT `customer_city` FROM customer 
+ UNION 
+ SELECT city FROM `student`
+
+UNION ALL OPARETOR:
+ SELECT `customer_city` FROM customer 
+ UNION ALL
+ SELECT city FROM `student`
+ 
+SQL JOIN MULTIPLE TABLES:
+SELECT customer.customer_name,customer.customer_number,customer.customer_city,
+customer.customer_email,product.product_name,product.product_prich,orders.order_number
+FROM orders
+INNER JOIN customer ON orders.c_id=customer.customer_id
+INNER JOIN product ON orders.p_id =product.product_id
+
+SQL:Alisases:
+SELECT `customer_name` `NAME` FROM `customer`
+SELECT CONCAT (customer_name,' ',customer_city) AS `something` FROM customer
+SELECT customer_name AS `Name` FROM customer
+
+AGGREGATE FUNCTION:
+
+SELECT SUM(product_prich) FROM product
+SELECT MAX(product_prich) FROM product
+SELECT AVG(product_prich) FROM product
+SELECT COUNT(product_prich) FROM product
+SELECT COUNT(product_prich) AS `product_price` FROM product
+
+GROUP BY:
+SELECT product_prich,COUNT(product_prich)
+FROM product
+WHERE product_prich > 2500
+GROUP BY product_prich
+
+HAVING STATEMENT:
+SELECT product_prich,COUNT(product_prich) AS product_price
+FROM product
+GROUP BY product_prich
+HAVING COUNT(product_prich)>=2
+
+UCASE:
+SELECT ucase(customer_name) FROM customer;
+L_CASE:
+SELECT lcase(customer_name) FROM customer;
+SELECT lcase(customer_name) AS `customer name` FROM customer;
+
+LENGTH FUNCTION:
+SELECT LENGTH( customer_name) FROM customer
+MID:
+SELECT MID( customer_name,1,3) FROM customer
+
+NOW():
+SELECT customer_name, customer_city, NOW() FROM customer;
+
+VIEW FUNCTION:
+CREATE VIEW customer_view AS
+SELECT customer_name ,customer_city,customer_email
+FROM customer
+view dekar jnw:
+SELECT * FROM `customer_view` 
+
+
+ 
