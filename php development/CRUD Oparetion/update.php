@@ -33,9 +33,7 @@ require_once 'dbcon.php';
         <td><?php echo $row['password']; ?></td>
         <td><?php echo $row['status']==1?'Active':'Inactive'; ?></td>
         <td><?php echo $row['datetime']; ?></td>
-        <td><a href="edit.php?id=<?= base64_encode($row['id']) ?>" >Edit</a>
-        <a href="delete.php?id=<?= base64_encode($row['id']) ?>" >Delete</a></td>
-
+        <td><a href="delete.php?id=<?= base64_encode($row['id']) ?>" >Edit</a></td>
     </tr>
       <?php
     }
