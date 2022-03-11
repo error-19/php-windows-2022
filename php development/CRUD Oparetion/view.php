@@ -20,6 +20,7 @@ require_once 'dbcon.php';
        <th>password</th>
        <th>Status</th>
        <th>Datetime</th>
+       <th>Action</th>
     </tr>
     <?php
      $result=mysqli_query($con,query:"SELECT * FROM `youtube`");
@@ -32,6 +33,7 @@ require_once 'dbcon.php';
         <td><?php echo $row['password']; ?></td>
         <td><?php echo $row['status']==1?'Active':'Inactive'; ?></td>
         <td><?php echo $row['datetime']; ?></td>
+        <td><a href="delete.php?id=<?= base64_encode($row['id']) ?>" >Delete</a></td>
     </tr>
       <?php
     }
