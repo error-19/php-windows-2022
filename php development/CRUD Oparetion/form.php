@@ -1,5 +1,5 @@
 <?php
- $con = mysqli_connect('localhost','root','','test');
+require_once 'dcon.php';
  if(isset($_POST['save_info'])){
     $name=$_POST['name'];
     $email=$_POST['email'];
@@ -88,10 +88,12 @@ else
 </table>
 
     </form>
+    <a href="view.php">All Users</a>
     <?php 
     if(isset($success)){
         echo '<p>'.$success.'</p>';
     }
      ?>
+
 </body>
 </html>
