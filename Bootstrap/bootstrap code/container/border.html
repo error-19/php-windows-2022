@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First webpage </title>
+    <link rel=" stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css " integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm " crossorigin="anonymous ">
+</head>
+
+<body>
+    <!--
+    <div>
+        <div class="container bg-dark text-white p-1">
+            <h1 class="border border-danger"> My Name is Shamim Sorkar</h1>
+            <h1 class="rounded border"> My Name is Shamim Sorkar</h1>
+        </div>
+    </div>
+       -->
+    <div class="container bg-success text-white">
+        <div>
+            <img class=" d-block m-auto border   rounded-circle" src="data:image/jpeg;base64,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"
+                alt="">
+        </div>
+    </div>
+
+    <!--
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <h2>My Name is Shamim Sorkar</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime doloribus animi, quo quam illo odio corrupti minus facilis recusandae quaerat quidem, nihil, magni commodi blanditiis error fugiat dignissimos aperiam quos dolorum ipsa iusto.
+                    Fugit ad velit aperiam. Reiciendis, necessitatibus autem. Nesciunt, nostrum beatae. Aliquid vero sed eum dignissimos nemo obcaecati eaque, dolor debitis consectetur id nesciunt ea doloribus quia officiis tempore sapiente, repudiandae
+                    accusamus ad. Voluptas illum a eveniet incidu nt fugiat sunt aspernatur repellendus officiis animi, esse corporis quam itaque.</p>
+            </div>
+            <div class="col-4">
+                <h2>My Name is Shamim Sorkar</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime doloribus animi, quo quam illo odio corrupti minus facilis recusandae quaerat quidem, nihil, magni commodi blanditiis error fugiat dignissimos aperiam quos dolorum ipsa iusto.
+                    Fugit ad velit aperiam. Reiciendis, necessitatibus autem. Nesciunt, nostrum beatae. Aliquid vero sed eum dignissimos nemo obcaecati eaque, dolor debitis consectetur id nesciunt ea doloribus quia officiis tempore sapiente, repudiandae
+                    accusamus ad. Voluptas illum a eveniet incidu nt fugiat sunt aspernatur repellendus officiis animi, esse corporis quam itaque.</p>
+            </div>
+            <div class="col-4">
+                <h2>My Name is Shamim Sorkar</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime doloribus animi, quo quam illo odio corrupti minus facilis recusandae quaerat quidem, nihil, magni commodi blanditiis error fugiat dignissimos aperiam quos dolorum ipsa iusto.
+                    Fugit ad velit aperiam. Reiciendis, necessitatibus autem. Nesciunt, nostrum beatae. Aliquid vero sed eum dignissimos nemo obcaecati eaque, dolor debitis consectetur id nesciunt ea doloribus quia officiis tempore sapiente, repudiandae
+                    accusamus ad. Voluptas illum a eveniet incidu nt fugiat sunt aspernatur repellendus officiis animi, esse corporis quam itaque.</p>
+            </div>
+        </div>
+    </div>
+    -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
