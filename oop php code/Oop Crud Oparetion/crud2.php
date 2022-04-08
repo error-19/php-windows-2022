@@ -3,6 +3,7 @@ require_once 'classes/User.php';
 $user=new User();
 $show=$user->see();
 print_r($show);
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -32,24 +33,24 @@ print_r($show);
     while ($row=mysqli_fetch_assoc($show)){
 
 
-        ?>
-        <tr>
-            <td>
-                <?= $row['name'] ?>
-            </td>
-            <td>
-                <?= $row['email'] ?>
-            </td>
-            <td>
-                <?= $row['password'] ?>
-            </td>
-            <td>
-                <a href="">Edit</a>
-                <a href="delete.php?id=<?=$row['id']?>">Delete <a>
-            </td>
-        </tr>
+    ?>
+    <tr>
+        <td>
+            <?= $row['name'] ?>
+        </td>
+        <td>
+            <?= $row['email'] ?>
+        </td>
+        <td>
+            <?= $row['password'] ?>
+        </td>
+        <td>
+<a href="">Edit</a>
+            <a href="delete.php?id=<?=$row['id']?>">Delete <a>
+        </td>
+    </tr>
 
-        <?php
+    <?php
     }
     ?>
 </table>
